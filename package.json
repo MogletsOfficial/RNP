@@ -1,0 +1,19 @@
+{
+  "name": "rnp",
+  "version": "1.0.0",
+  "description": "Used to pick a winning number using fancy hashes!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MogletsOfficial/RNP.git"
+  },
+  "author": "Moglets Official",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MogletsOfficial/RNP/issues"
+  },
+  "homepage": "https://github.com/MogletsOfficial/RNP#readme"
+}
