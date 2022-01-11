@@ -1,8 +1,11 @@
+// To run, use:
+// node index randomStringHere
 
+// Warning… this is the messiest code ever!
 const crypto = require('crypto')
 
-// set your seed
-let seed = "discord link will go here!!"
+// set the seed
+let seed = process.argv.slice(2)[0]
 let range = {
   'low': 1, // set lowest number to detect
   'high': 111, // set highest number to detect
@@ -55,12 +58,10 @@ function determineWinningNumber(_seed){
       if(winnersPicked >= totalWinners){
         console.log("")
         console.log("|||| MOGLET GRAND PRIZE RAFFLE!! |||")
-        console.log("|||| MOGLET GRAND PRIZE RAFFLE!! |||")
-        console.log("|||| MOGLET GRAND PRIZE RAFFLE!! |||")
         console.log("")
         let countdown = 3
         sleep(1000).then(() => {
-          console.log(countdown--)
+          console.log("Drawing in…")
         });
         sleep(3000).then(() => {
           console.log(countdown--)
@@ -69,6 +70,9 @@ function determineWinningNumber(_seed){
           console.log(countdown--)
         });
         sleep(7000).then(() => {
+          console.log(countdown--)
+        });
+        sleep(9000).then(() => {
           console.log("")
           console.log(winnerAnnouncement)
         });
